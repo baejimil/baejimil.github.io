@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/baejimil/coalnuReactStudy/static/css/main.24172b18.css",
-    "main.js": "/baejimil/coalnuReactStudy/static/js/main.53c66c0b.js",
-    "static/js/453.e344158c.chunk.js": "/baejimil/coalnuReactStudy/static/js/453.e344158c.chunk.js",
-    "index.html": "/baejimil/coalnuReactStudy/index.html",
-    "main.24172b18.css.map": "/baejimil/coalnuReactStudy/static/css/main.24172b18.css.map",
-    "main.53c66c0b.js.map": "/baejimil/coalnuReactStudy/static/js/main.53c66c0b.js.map",
-    "453.e344158c.chunk.js.map": "/baejimil/coalnuReactStudy/static/js/453.e344158c.chunk.js.map"
+    "main.css": "/baejimil/rockscissorpaper/static/css/main.24172b18.css",
+    "main.js": "/baejimil/rockscissorpaper/static/js/main.85fee097.js",
+    "static/js/453.e344158c.chunk.js": "/baejimil/rockscissorpaper/static/js/453.e344158c.chunk.js",
+    "index.html": "/baejimil/rockscissorpaper/index.html",
+    "main.24172b18.css.map": "/baejimil/rockscissorpaper/static/css/main.24172b18.css.map",
+    "main.85fee097.js.map": "/baejimil/rockscissorpaper/static/js/main.85fee097.js.map",
+    "453.e344158c.chunk.js.map": "/baejimil/rockscissorpaper/static/js/453.e344158c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24172b18.css",
-    "static/js/main.53c66c0b.js"
+    "static/js/main.85fee097.js"
   ]
 }
