@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/baejimil/baejimil.github.io/static/css/main.24172b18.css",
-    "main.js": "/baejimil/baejimil.github.io/static/js/main.e366c415.js",
-    "static/js/453.e344158c.chunk.js": "/baejimil/baejimil.github.io/static/js/453.e344158c.chunk.js",
-    "index.html": "/baejimil/baejimil.github.io/index.html",
-    "main.24172b18.css.map": "/baejimil/baejimil.github.io/static/css/main.24172b18.css.map",
-    "main.e366c415.js.map": "/baejimil/baejimil.github.io/static/js/main.e366c415.js.map",
-    "453.e344158c.chunk.js.map": "/baejimil/baejimil.github.io/static/js/453.e344158c.chunk.js.map"
+    "main.css": "/baejimil/coalnuReactStudy/static/css/main.24172b18.css",
+    "main.js": "/baejimil/coalnuReactStudy/static/js/main.53c66c0b.js",
+    "static/js/453.e344158c.chunk.js": "/baejimil/coalnuReactStudy/static/js/453.e344158c.chunk.js",
+    "index.html": "/baejimil/coalnuReactStudy/index.html",
+    "main.24172b18.css.map": "/baejimil/coalnuReactStudy/static/css/main.24172b18.css.map",
+    "main.53c66c0b.js.map": "/baejimil/coalnuReactStudy/static/js/main.53c66c0b.js.map",
+    "453.e344158c.chunk.js.map": "/baejimil/coalnuReactStudy/static/js/453.e344158c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24172b18.css",
-    "static/js/main.e366c415.js"
+    "static/js/main.53c66c0b.js"
   ]
 }
