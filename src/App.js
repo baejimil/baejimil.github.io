@@ -1,40 +1,72 @@
-import {useState} from 'react';
+import React from 'react';
 import './App.css';
 import Box from './component/Box';
+import {useState} from 'react';
+import {FaHandScissors, FaHandRock, FaHandPaper} from "react-icons/fa";
 
 const choice = {
   rock : {
     name : "Rock",
-    img : "https://m.media-amazon.com/images/I/51rOMX5z40L.jpg"
+    img : "https://cdn-icons-png.flaticon.com/128/4151/4151487.png"
   },
   scissors : {
     name : "Scissors",
-    img : "http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcT7zluUaMxNynokVgHhNnZ8kkfOXP60e5ZBiB9XtY8Nm18Cjs9_ZsLJd-ATis74Tjll23LEb9WVopmeXgTeveM"
+    img : "https://cdn-icons-png.flaticon.com/128/4151/4151780.png"
   },
-  paper : {
+  paper: {
     name : "Paper",
-    img : "https://m.media-amazon.com/images/I/61OorFhm6SL._AC_UF894,1000_QL80_.jpg"
+    img : "https://cdn-icons-png.flaticon.com/128/10187/10187368.png"
   }
 }
+
 function App() {
 
   const [userSelect, setUserSelect] = useState(null)
 
-  const play=(userChoice)=> {
-    setUserSelect(choice[userChoice])
-  };
+  const [computerSelect, setComputerSelect] = useState(null)
+
+  const [result, setResult] = useState("")
+
+  const play =(userChoice)=>{
+    setUserSelect(choice[userChoice]) 
+    let computerChoice = randomChoice();
+    setComputerSelect(computerChoice);
+    setResult(judgement(choice[userChoice], computerChoice))
+    
+  }
+
+  const randomChoice =()=> {
+    let itemArray = Object.keys(choice);
+    let randomItem = Math.floor(Math.random() * itemArray.length)
+    let final = itemArray[randomItem]
+
+    return choice[final];
+  }
+
+  const judgement =(user, computer)=> {
+    if( user.name === computer.name){
+      return "tie"
+    }else if(user.name === "Rock") return computer.name === "Scissors"?"win":"lose"
+    else if(user.name === "Scissors") return computer.name === "Paper"?"win":"lose"
+    else if(user.name === "Paper") return computer.name === "Rock"?"win":"lose"
+  }
 
   return (
     <div>
-      <div className='main'>
-        <Box title='You' item={userSelect} />
-        {/* <Box title='Computer' /> */}
+      <div className="main">
+          <Box title="You" item={userSelect} result={result} />
+          <Box title="Computer" item={computerSelect} result={result} />
       </div>
-
-      <div className='main'>
-        <button onClick={ () => play("scissors")}>가위</button>
-        <button onClick={ () => play("rock")}>바위</button>
-        <button onClick={ () => play("paper")}>보</button>
+      <div className="main">
+        <button onClick={()=> {play("scissors")}}>
+          <FaHandRock size={40} />
+        </button>
+        <button onClick={()=> {play("rock")}}>
+          <FaHandScissors size={40} />
+        </button>
+        <button onClick={()=> {play("paper")}}>
+          <FaHandPaper size={40} />
+        </button>
       </div>
     </div>
   );
